@@ -5,7 +5,7 @@
 #SBATCH --time=36:00:00 
 #SBATCH --partition=gm4-pmext
 #SBATCH --qos=gm4-cpu
-#SBATCH --nodes=3
+#SBATCH --nodes=1
 #SBATCH --ntasks-per-node=40
 #SBATCH --gres=gpu:0
 #SBATCH --cpus-per-task=1 #increase this comensurate with number of threads

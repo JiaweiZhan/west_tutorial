@@ -1,0 +1,14 @@
+#!/scratch/midway2/jiaweiz/anaconda3/bin/python3
+
+import sys, os
+from ase.io import vasp
+from ase.io import espresso
+
+file_name = sys.argv[1]
+assert os.path.exists(file_name), "file not exists"
+
+atom = vasp.read_vasp(file_name)
+file_ase = file_name.split('.')[0] + '_ase.in'
+
+with open(file_ase, 'w') as file_object:
+    espresso.write_espresso_in(file_object, atom,crystal_coordinates=False)

@@ -1,0 +1,8 @@
+*.out
+rcc*
+Diamond.save
+Diamond.wstat.save
+Diamond.wstat.restart
+Diamond.wfreq.save
+Diamond.wfreq.restart
+Diamond.xml
